@@ -1,0 +1,125 @@
+:root {
+    --color-accent: oklab(67.17699999999999% 0.03447 -0.13406);
+    --color-accent-darker: oklab(48.333% 0.02681 -0.10697);
+}
+
+body {
+    /* Set line height to 1.5 times the font size and use the
+     OI's UI font as the website font */
+    accent-color: var(--color-accent);
+    font: 100%/1.5 system-ui;
+    max-width: 300ch;
+    margin-inline: auto;
+    padding: 5ch;
+}
+
+nav {
+    accent-color: var(--color-accent);
+    text-align: center;
+    display: flex;
+    margin-bottom: 2em;
+    border-bottom-width: 1px;
+    border-bottom-color: oklch(80% 3% 200);
+    border-bottom-style: solid;
+}
+
+/* Step 2.3: Style navigation links for each element <a> */
+nav a {
+    flex: 1; /* step 2.2 for each element to take the same space  */
+    text-decoration: none; /* Remove the underline from the links by setting */
+    color: inherit;
+    text-align: center;
+    padding: .5em;
+}
+
+nav a.current {
+    border-bottom-width: .4em;
+    border-bottom-style: solid;
+    border-bottom-color: oklch(80% 3% 200);
+    padding: .2em;
+}
+
+nav a:hover {
+    border-bottom-width: .4em;
+    border-bottom-color: var(--color-accent);
+    border-bottom-style: solid;
+    padding: .2em;
+    background-color: oklab(67.17699999999999% 0.03447 -0.13406 / 0.274);
+}
+
+input,
+textarea,
+button {
+    font: inherit; /* Ensures form elements use the same font as the body */
+}
+
+/* label, input, textarea, button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+} */
+
+label {
+    /* margin-block: 1rem; */
+    display:grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column: 1/-1;
+    gap: 1em;
+}
+
+
+img, iframe {
+    max-width: 100%;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    min-width: 15em;
+    max-width: 1fr;
+    gap: 1em;
+}
+
+article {
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+}
+
+h2{
+    margin: 0
+}
+
+h1{
+    font-size: 350%;
+    margin-bottom: .3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    text-wrap: balance;
+}
+
+#cv {
+    max-width: 50rem;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 1em
+    /* text-wrap: balance;
+    display: grid;
+    gap: 1em; */
+}
+
+#cvh2 {
+    border-width: .1em;
+    border-color: var(--color-accent-darker);
+    border-style: solid;
+    padding: .1em;
+    margin-bottom: .5em;
+    color: var(--color-accent-darker);
+}
