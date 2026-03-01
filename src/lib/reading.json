@@ -2,16 +2,16 @@
     {
         "title": "Burnout: The Secret to Unlocking the Stress Cycle",
         "author": "Emily Nagoski and Amelia Nagoski",
-        "image": "/images/lab3-books/burnout.jpg"
+        "image": "images/lab3-books/burnout.jpg"
     },
     {
         "title": "The Cuban revolution in the 21st century",
         "author": "Georgie Lambie",
-        "image": "/images/lab3-books/cuba.png"
+        "image": "images/lab3-books/cuba.png"
     },
     {
         "title": "People, Power, Change: Organizing for Democratic Renewal",
         "author": "Marshall Ganz",
-        "image": "/images/lab3-books/ganz.jpg"
+        "image": "images/lab3-books/ganz.jpg"
     }
 ]
