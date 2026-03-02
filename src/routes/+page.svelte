@@ -7,13 +7,6 @@
 
 <title>"Avril Matute: Personal Portfolio"</title>
     <h1> Avril Matute </h1>
-<nav>
-    <a class="current" href=".">main page</a>
-    <a href="contact"> my contact  </a>
-    <a href="projects"> my projects </a>
-    <a href="cv"> my CV  </a>
-    <a href="https://github.com/avril-matute" target="_blank"> github</a>
-</nav>
 
 <body>
 

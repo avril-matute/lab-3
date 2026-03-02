@@ -3,18 +3,6 @@
 </svelte:head>
 
 <section id="cv">
-    <h1>My CV</h1>
-</section>
-
-<nav>
-    <a href=".">main page</a>
-    <a href="contact"> my contact  </a>
-    <a href="projects"> my projects </a>
-    <a class="current" href="cv"> my CV  </a>
-    <a href="https://github.com/avril-matute" target="_blank"> github</a>
-</nav>
-
-<section id="cv">
     <h1>Avril Matute</h1>
     <article> Cambridge MA 02139 | Phone: 617-216-3268 | <a href="https://www.linkedin.com/in/avril-matute-364584337"> www.linkedin.com/in/avril-matute-364584337</a> |  avmatute@mit.edu </article>
 </section>
