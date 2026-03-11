@@ -49,6 +49,10 @@ img, iframe {
     gap: 1em;
 }
 
+.outro {
+
+    margin-bottom: 10fr;
+}
 
 article {
     grid-template-rows: subgrid;
