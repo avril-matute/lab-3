@@ -87,7 +87,7 @@
 
     h2{
         grid-row: 1;
-        color: oklch(36.054% 0.18874 294.321 / 0.653);
+        color: oklab(48.333% 0.02681 -0.10697);
         padding: .5em;
     }
 
