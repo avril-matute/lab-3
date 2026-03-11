@@ -82,7 +82,7 @@
         display: grid;
         grid-template-rows: auto 2fr;
         place-items: center left;
-        border: 2px solid oklch(36.054% 0.18874 294.321 / 0.4);
+        border: 2px solid oklab(48.333% 0.02681 -0.10697);
     }
 
     h2{
