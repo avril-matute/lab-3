@@ -82,12 +82,12 @@
         display: grid;
         grid-template-rows: auto 2fr;
         place-items: center left;
-        border: 2px solid oklab(48.333% 0.02681 -0.10697);
+        border: 2px solid oklab(67.17699999999999% 0.03447 -0.13406);
     }
 
     h2{
         grid-row: 1;
-        color: oklab(48.333% 0.02681 -0.10697);
+        color: oklab(67.17699999999999% 0.03447 -0.13406);
         padding: .5em;
     }
 

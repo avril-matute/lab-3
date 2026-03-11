@@ -1,70 +1,70 @@
 [
     {
         "title": "The First Gallery",
-        "image": "images/lab-5/drawing.jpg",
+        "image": "../images/lab-5/drawing.jpg",
         "description": "A collection of crayon and marker drawings spread across a sunlit floor.",
         "year": "2010",
         "story": "This was my 'Pre-Alpha' phase. Before I understood grids or typography, I was deep in the trenches of wax-based media. This floor was my first dashboard. I remember the high stakes of choosing between 'Sky Blue' and 'Cerulean'—a decision that felt just as heavy as choosing a hex code today. Every sun had a face, and every house was a square with a triangle on top. It wasn't just art; it was my first attempt at mapping out the world as I saw it, one messy scribble at a time."
     },
     {
         "title": "Architect of the Imaginary",
-        "image": "images/lab-5/house.jpg",
+        "image": "../images/lab-5/house.jpg",
         "description": "Two children sitting inside a large, decorated cardboard box house with string lights.",
         "year": "2012",
         "story": "The cardboard era was a pivotal shift from 2D mapping to 3D spatial design. I realized that if you have enough duct tape and a dream, you can manifest a real estate empire in your living room. Decorating the 'interior' with string lights was my first foray into User Experience (UX)—I wasn't just building a box; I was curating an 'atmosphere.' Looking back, this was the moment I stopped just looking at my projects and started literally living inside of them."
     },
     {
         "title": "The Logic of the Stitch",
-        "image": "images/lab-5/scarf.jpg",
+        "image": "../images/lab-5/scarf.jpg",
         "description": "A rainbow-colored knitted scarf and matching beanie resting on a wooden surface.",
         "year": "2014",
         "story": "People see a rainbow scarf; I see a successful sequence of 'if-then' statements. Knitting was my secret gateway into programming. If I missed a stitch, the whole system crashed. I became obsessed with the structural integrity of the 'knit-purl' logic. This project taught me that beauty is often just the byproduct of a very disciplined, repetitive process. It was the first time I realized that math isn't just numbers on a page—it's something warm you can wear on a cold day."
     },
     {
         "title": "Small Scale Branding",
-        "image": "images/lab-5/jewlelry.jpg",
+        "image": "../images/lab-5/jewlelry.jpg",
         "description": "Hands assembling personalized bead keychains with names like 'EMMA' and 'JASON'.",
         "year": "2016",
         "story": "Welcome to the 'Startup Phase.' I was basically a CPO (Chief Product Officer) at thirteen. This wasn't just about beads; it was about database management and personalization. I had to manage inventory, fulfill custom 'user requests' for specific names, and ensure the 'UI' (the keychain charms) matched the 'customer persona.' Seeing someone walk around with an 'Emma' keychain I made was my first hit of professional dopamine. I learned that data is way more powerful when it’s personal."
     },
     {
         "title": "The Curated Celebration",
-        "image": "images/lab-5/birthday.jpg",
+        "image": "../images/lab-5/birthday.jpg",
         "description": "A birthday setup featuring flower-shaped balloons, a daisy-themed cake, and floral arrangements.",
         "year": "2018",
         "story": "This was the 'Total Design' era. I stopped caring about individual objects and started obsessing over the 'system.' Every element—from the daisy patterns on the cake to the exact shade of the balloon petals—had to be in perfect chromatic harmony. It was a masterclass in project management under a hard deadline (the guests arriving). It taught me that a project is only as good as its weakest link; if the cake doesn't match the balloons, the whole 'brand identity' of the party falls apart."
     },
     {
         "title": "The Academic Grind",
-        "image": "images/lab-5/notes.jpg",
+        "image": "../images/lab-5/notes.jpg",
         "description": "Intricate, color-coded medical notes about suffixes and surgical terms in a notebook.",
         "year": "2020",
         "story": "When the world hit 'Pause' in 2020, I hit 'Fast Forward' on my information design skills. Medical terminology is a nightmare of Greek and Latin roots, so I treated my notebook like a complex infographic. I used highlighters like a UI designer uses primary and secondary action colors. If a suffix was 'procedural,' it got a specific treatment. This wasn't just studying; it was an exercise in cognitive load reduction. I was literally 'hacking' my own brain to process complex data faster through visual hierarchy."
     },
     {
         "title": "The Narrative Timeline",
-        "image": "images/lab-5/history.jpg",
+        "image": "../images/lab-5/history.jpg",
         "description": "A large-scale wall mural depicting a timeline of world history from the Stone Age to the present.",
         "year": "2022",
         "story": "The mural was my first encounter with 'Big Data' (literally—it was like 20 feet long). The challenge was: how do you compress 6,000 years of human chaos into a single linear axis? I had to decide which 'data points' (empires, inventions) were significant enough to make the cut. It was a lesson in storytelling and scale. I learned that when you're working on a project this big, you have to constantly step back to see the 'Macro' view, then lean in for the 'Micro' details. It’s a balance I still use in every chart I build."
     },
     {
         "title": "Drafting the Human Element",
-        "image": "images/lab-5/A1.png",
+        "image": "../images/lab-5/A1.png",
         "description": "A hand-drawn graph on grid paper using dots and triangles to represent population trends.",
         "year": "2023",
         "story": "This was the 'Sketchbook Phase' of my data career. I was tired of boring, soul-less bar charts. I wanted to see if I could represent gender and population growth using shapes that felt more organic. By using triangles and dots, I was experimenting with 'pre-attentive attributes'—the stuff our eyes notice before our brain even starts reading. It was a messy, hand-drawn bridge between the 'artist' I used to be and the 'analyst' I was becoming. I was learning that sometimes, the best insights start on a piece of grid paper."
     },
     {
         "title": "Global Economic Insights",
-        "image": "images/lab-5/Pro 01 Artboard 1.jpg",
+        "image": "../images/lab-5/Pro 01 Artboard 1.jpg",
         "description": "A digital bubble chart comparing GNI growth and education expenditure in Latin America.",
         "year": "2025",
         "story": "Now we're in the big leagues. This project was a deep dive into the socio-economic pulse of a whole region. I used bubble charts to visualize GNI growth because I wanted the viewer to 'feel' the weight of the economy. Seeing Mexico and Brazil as these massive, floating nodes compared to the smaller Caribbean islands made the regional disparities impossible to ignore. It wasn't just a chart; it was an argument for education funding. I realized that data isn't neutral—it’s a tool for advocacy."
     },
     {
         "title": "The Final Synthesis",
-        "image": "images/A3/Page3.jpg",
+        "image": "../images/A3/Page3.jpg",
         "description": "A sophisticated radial chart showing the waves of COVID-19 cases in the US over three years.",
         "year": "2026",
         "story": "This is the 'Final Boss' of my portfolio. This radial chart is where my whole life's work converges. The circularity reminds me of the flower balloons and the knit hats; the color-coded paths are a direct evolution of my medical notes; and the data density reflects the complexity of the global history mural. It shows how the waves of the pandemic overlapped and repeated—a 'clock' of public health. It’s the perfect marriage of aesthetic beauty and cold, hard truth. I’m finally using every crayon in the box."
