@@ -8,6 +8,7 @@
     {url: "/projects", title: "my projects"},
     {url: "/cv", title: "my cv"},
     {url: "/contact", title: "my contact"},
+    {url: "/meta", title: "meta"},
     {url: "https://github.com/avril-matute", title: "github"},
     // add other pages here
     ];
@@ -96,6 +97,6 @@
         font-family: inherit;
     }
 
-   
+
 
 </style>

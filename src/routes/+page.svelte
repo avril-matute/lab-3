@@ -5,6 +5,21 @@
     import ReadingItem from "$lib/ReadingItem.svelte";
 
     import { onMount } from "svelte";
+    // import { base } from '$app/paths';
+    // import * as d3 from 'd3';
+
+    // let locData = [];
+
+    // onMount(async () => {
+    //     locData = await d3.csv(`${base}/loc.csv`, row => ({
+    //         ...row,
+    //         line: Number(row.line),
+    //         length: Number(row.length),
+    //         depth: Number(row.depth)
+    //     }));
+
+    //     console.log("My locData:", locData);
+    // });
 
     let githubData = null; // This will eventually hold our Github stats
     let loading = true; // This will be true *until* the fetch's promise resolves to a value
