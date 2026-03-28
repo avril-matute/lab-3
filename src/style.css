@@ -92,3 +92,31 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5em;
     color: var(--color-accent-darker);
 }
+
+.stats {
+        display: grid;
+        grid-template-rows: auto 2fr;
+        place-items: center center;
+        padding: 1em;
+        border: 2px solid oklab(67.17699999999999% 0.03447 -0.13406);
+    }
+
+.stats h2 {
+        grid-row: 1;
+        grid-column: 3;
+        color: oklab(67.17699999999999% 0.03447 -0.13406);
+        padding: .5em;
+    }
+
+.stats dt {
+        grid-row: 2;
+        color: oklab(67.17699999999999% 0.03447 -0.13406);
+        /* font-weight: bold; */
+        /* padding: 1em; */
+    }
+
+.stats dd {
+        grid-row: 3;
+        font-size:x-large;
+        /* padding: 1em; */
+    }

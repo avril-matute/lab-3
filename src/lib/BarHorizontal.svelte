@@ -2,12 +2,12 @@
     import * as d3 from 'd3';
 
     let width = 400;
-    let height = 300;
+    let height = 150;
     // let data = [
     //     { label: "A", value: 10 },
     //     { label: "B", value: 20 }
     // ];
-    let margin = { top: 20, right: 20, bottom: 30, left: 60 };
+    let margin = { top: 20, right: 10, bottom: 30, left: 60 };
     let innerWidth  = width  - margin.left - margin.right;
     let innerHeight = height - margin.top  - margin.bottom;
     let xAxis, yAxis;
@@ -19,6 +19,7 @@
     // { label: "E", value: 25 }
     // ];
     export let data = [];
+    export let title = "";
     $: maxBar = d3.greatest(data, d => d.value);
     $: yScale = d3.scaleBand()
     .domain(data.map(d => d.label))
@@ -33,11 +34,11 @@
         .domain(data.map(d => d.label));
 
     $: if (xAxis && yAxis) {
-    d3.select(yAxis).call(d3.axisLeft(yScale));
-    d3.select(xAxis).call(
-        d3.axisBottom(xScale)
-            .tickFormat(d => Number.isInteger(d) ? d : "")
-            // .tickValues(d3.range(0, d3.max(data, d => d.value) + 1))
+        d3.select(yAxis).call(d3.axisLeft(yScale));
+        d3.select(xAxis).call(
+            d3.axisBottom(xScale)
+                .ticks(Math.min(d3.max(data, d => d.value), 10))
+                // .tickValues(d3.range(0, d3.max(data, d => d.value) + 1))
     );
 
 }
@@ -51,10 +52,10 @@
             y={margin.top / 2}
             text-anchor="middle"
             class="chart-title">
-            Lines of Code by Language
+            {title}
         </text>
         <g transform="translate({margin.left}, {margin.top + innerHeight})">
-            <g bind:this={xAxis}/>
+            <g class="axis" bind:this={xAxis}/>
                 <text
                     x={innerWidth / 2}
                     y={35}
@@ -65,7 +66,7 @@
             </g>
 
         <g transform="translate({margin.left}, {margin.top})">
-            <g bind:this={yAxis}/>
+            <g class="axis" bind:this={yAxis}/>
                 <text
                     x={-(innerHeight / 2)}
                     y={-margin.left + 15}
@@ -136,8 +137,10 @@
     .container {
         display:flex;
         padding: 20px;
-        border: 1px solid gray;
+        border: .3px solid var(--color-accent);
         flex-direction: column;
+        border-radius: 7px;
+        box-shadow: .5px .5px 5px oklab(71.399% 0.01478 -0.01804 / 0.584);
 
     }
 
@@ -150,6 +153,7 @@
         justify-content: flex-end;
         gap: 1em;
         flex-wrap:wrap;
+        font-size: .5em;
     }
 
     .swatch {
@@ -167,24 +171,28 @@
     }
 
     .chart-title {
-        font-size: 1em;
+        font-size: .5em;
         font-weight: bold;
         fill: currentColor;
     }
 
     .axis-label {
-    font-size: 0.8em;
+    font-size: 0.5em;
     fill: currentColor;
     color: gray;
     }
 
     .annotation {
-        font-size: 0.7em;
+        font-size: 0.5em;
         fill: currentColor;
         font-style: italic;
         /* background-color: white; */
 
 
+    }
+
+    .axis :global(.tick text) {
+        font-size: 0.7em;
     }
 
 </style>

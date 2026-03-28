@@ -58,7 +58,7 @@
         <p> Something went wrong: {error.message}</p>
     {:else}
         <section>
-            <dl>
+            <dl class= "stats">
                 <h2> My Github Stats</h2>
                 <dt> </dt>
                 <dd> </dd>
@@ -93,27 +93,27 @@
 
 <style>
 
-    dl {
+    /* dl {
         display: grid;
         grid-template-rows: auto 2fr;
         place-items: center left;
         border: 2px solid oklab(67.17699999999999% 0.03447 -0.13406);
-    }
+    } */
 
-    h2{
+    /* h2{
         grid-row: 1;
         color: oklab(67.17699999999999% 0.03447 -0.13406);
         padding: .5em;
-    }
+    } */
 
-    dt {
+    /* dt {
         grid-row: 2;
         font-weight: bold;
-    }
+    } */
 
-    dd {
+    /* dd {
         grid-row: 3;
         padding: 1em;
-    }
+    } */
 
 </style>
