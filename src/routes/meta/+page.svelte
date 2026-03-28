@@ -12,7 +12,7 @@
     let locData = [];
     let wrangled = [];
     let commits = [];
-    let width = 1000, height = 600;
+    let width = 800, height = 500;
     let margin = { top: 20, right: 20, bottom: 30, left: 60 };
     let usableArea = {
         top: margin.top,
