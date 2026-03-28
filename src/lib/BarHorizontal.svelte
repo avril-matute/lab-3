@@ -153,7 +153,7 @@
         justify-content: flex-end;
         gap: 1em;
         flex-wrap:wrap;
-        font-size: .5em;
+        font-size: .8em;
     }
 
     .swatch {
