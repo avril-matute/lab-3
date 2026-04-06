@@ -1,6 +1,6 @@
 <script>
     import * as d3 from 'd3';
-    
+
     let width = 400;
     let height = 300;
     // let data = [
@@ -44,6 +44,7 @@
 
 
 </script>
+
 <div class="container">
     <svg viewBox="0 0 {width} {height}">
         <text

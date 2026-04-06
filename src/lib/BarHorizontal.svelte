@@ -20,11 +20,13 @@
     // ];
     export let data = [];
     export let title = "";
+    export let hasSelection = false;
     $: maxBar = d3.greatest(data, d => d.value);
     $: yScale = d3.scaleBand()
     .domain(data.map(d => d.label))
     .range([0, innerHeight])
     .padding(0.1)
+
 
     $: xScale = d3.scaleLinear()
         .domain([0, d3.max(data, d => d.value) || 1])
@@ -45,7 +47,8 @@
 
 
 </script>
-<div class="container">
+
+<div class="container" class:selected={hasSelection}>
     <svg viewBox="0 0 {width} {height}">
         <text
             x={margin.left + innerWidth / 2}
@@ -137,11 +140,16 @@
     .container {
         display:flex;
         padding: 20px;
-        border: .3px solid var(--color-accent);
+        border: .3px solid oklab(61.641% -0.05593 -0.03142);
         flex-direction: column;
         border-radius: 7px;
         box-shadow: .5px .5px 5px oklab(71.399% 0.01478 -0.01804 / 0.584);
+        transition: border-color 0.2s ease;
 
+    }
+
+    .container.selected {
+        border-color: var(--color-select);
     }
 
     .legend {

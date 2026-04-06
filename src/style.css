@@ -1,6 +1,7 @@
 :root {
     --color-accent: oklab(67.17699999999999% 0.03447 -0.13406);
     --color-accent-darker: oklab(48.333% 0.02681 -0.10697);
+    --color-select: oklab(90.137% -0.03317 0.10934);
 }
 
 body {
