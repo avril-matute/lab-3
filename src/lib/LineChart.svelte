@@ -172,7 +172,7 @@
     }
 
     .chart-title {
-        font-size: .5em;
+        font-size: 1.15em;
         font-weight: bold;
         fill: currentColor;
         text-align: center;
