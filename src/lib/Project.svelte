@@ -3,9 +3,21 @@
 </script>
 
 <article>
-    <h2> {data.title}</h2>
-    <img src={data.image} alt="">
-    <p> <b>{data.year} |</b> {data.description}</p>
+    <h2>{data.title}</h2>
+
+    {#if data.url}
+        <a href={data.url} target="_blank">
+            <img src={data.image} alt={data.title}>
+        </a>
+    {:else}
+        <img src={data.image} alt={data.title}>
+    {/if}
+
+    <p><b>{data.year} |</b> {data.description}</p>
+
+    {#if data.url}
+        <p class="button" color="white"><a href={data.url} target="_blank">View Project &rarr;</a></p>
+    {/if}
 </article>
 
 <style>
@@ -33,6 +45,25 @@
 
     h2{
         margin: 0
+    }
+
+    .button {
+        display: inline-block;
+        padding: 0.5em 1.2em;
+        background-color: var(--color-accent);
+        color: white !important;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 0.3em;
+        transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .button:hover {
+        background-color: var(--color-accent-darker);
+    }
+
+    .button:active {
+        transform: scale(0.95); /* Adds a little "click" animation */
     }
 
 </style>

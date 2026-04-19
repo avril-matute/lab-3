@@ -1,17 +1,18 @@
 [
     {
+        "title": "Biking in Boston",
+        "image": "../images/lab-9-bikes.jpg",
+        "description": "All about biking in Boston! Bike lanes, blue bike station transit and commute times.",
+        "year": "2026",
+        "story": "Biking in Boston represents the Spatial Reality phase of my evolution. After years of mapping abstract concepts—economic weight, historical timelines, and cognitive load—this project forced me out of the theoretical and into the physical streets. It is one thing to plot static data on a grid; it is entirely another to visualize human transit across a living, breathing city. By layering bike lanes, Blue Bike stations, and isochrone commute times, I wasn't just building a map; I was visualizing the literal flow of human energy. The challenge shifted from mere aesthetic representation to functional utility. If my previous radial charts and bubble graphs were about understanding the past, this geospatial visualization is about optimizing the present. Every dynamic station node and teal bike route represents a real-world decision made by a commuter—an intersection of urban planning and daily life.",
+        "url": "https://avril-matute.github.io/bikes-boston/"
+    },
+    {
         "title": "The First Gallery",
         "image": "../images/lab-5/drawing.jpg",
         "description": "A collection of crayon and marker drawings spread across a sunlit floor.",
         "year": "2010",
         "story": "This was my 'Pre-Alpha' phase. Before I understood grids or typography, I was deep in the trenches of wax-based media. This floor was my first dashboard. I remember the high stakes of choosing between 'Sky Blue' and 'Cerulean'—a decision that felt just as heavy as choosing a hex code today. Every sun had a face, and every house was a square with a triangle on top. It wasn't just art; it was my first attempt at mapping out the world as I saw it, one messy scribble at a time."
-    },
-    {
-        "title": "Architect of the Imaginary",
-        "image": "../images/lab-5/house.jpg",
-        "description": "Two children sitting inside a large, decorated cardboard box house with string lights.",
-        "year": "2010",
-        "story": "The cardboard era was a pivotal shift from 2D mapping to 3D spatial design. I realized that if you have enough duct tape and a dream, you can manifest a real estate empire in your living room. Decorating the 'interior' with string lights was my first foray into User Experience (UX)—I wasn't just building a box; I was curating an 'atmosphere.' Looking back, this was the moment I stopped just looking at my projects and started literally living inside of them."
     },
     {
         "title": "The Logic of the Stitch",
