@@ -40,10 +40,10 @@
   <title>Projects</title>
 </svelte:head>
 
-<section>
-    <h2>Data wrangling result</h2>
-    <pre>{JSON.stringify(wrangled, null, 2)}</pre>
-</section>
+  <!-- <section>
+      <h2>Data wrangling result</h2>
+      <pre>{JSON.stringify(wrangled, null, 2)}</pre>
+  </section> -->
 
 <Bar data={barData} />
 
