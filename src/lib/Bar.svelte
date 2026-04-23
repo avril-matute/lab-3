@@ -4,23 +4,12 @@
     let selectedIndex = -1;
     let width = 400;
     let height = 300;
-    // let data = [
-    //     { label: "A", value: 10 },
-    //     { label: "B", value: 20 }
-    // ];
     let margin = { top: 40, right: 150, bottom: 80, left: 60 };
     let innerWidth  = width  - margin.left - margin.right;
     let innerHeight = height - margin.top  - margin.bottom;
     let xAxis, yAxis;
     let liveText = "";
 
-    // let data = [
-    // { label: "A", value: 10 },
-    // { label: "B", value: 20 },
-    // { label: "C", value: 15 },
-    // { label: "D", value: 8 },
-    // { label: "E", value: 25 }
-    // ];
     export let data = [];
     $: maxBar = d3.greatest(data, d => d.value);
     $: xScale = d3.scaleBand()
@@ -37,13 +26,6 @@
         .range(d3.quantize(d3.interpolateBlues, data.length));
 
     $: description = `A bar chart showing project counts by year. ${data.map(d => `${d.label}: ${d.value} projects`).join(', ')}.`;
-    function toggleBar(index, event) {
-        if (!event.key || event.key === "Enter") {
-            selectedIndex = index;
-            const d = data[index];
-            liveText = `${d.label}: ${d.value} projects selected.`;
-        }
-    }
 
     let showChart = true;
 
@@ -52,6 +34,13 @@
         liveText = showChart ? "Bar chart view shown." : "Table view shown.";
     }
 
+    function toggleBar(index, event) {
+        if (!event.key || event.key === "Enter") {
+            selectedIndex = index;
+            const d = data[index];
+            liveText = `${d.label}: ${d.value} projects selected.`;
+        }
+    }
     $: if (xAxis && yAxis) {
     d3.select(xAxis).call(d3.axisBottom(xScale));
     d3.select(yAxis).call(
@@ -59,6 +48,7 @@
             .tickFormat(d => Number.isInteger(d) ? d : "")
             .tickValues(d3.range(0, d3.max(data, d => d.value) + 1))
     );
+
 
 
 
@@ -115,7 +105,7 @@
                     </text>
                 </g>
             <g transform="translate({margin.left}, {margin.top})">
-                {#each data as d}
+                {#each data as d, index}
                     <rect
                         x={xScale(d.label)}
                         y={yScale(d.value)}
@@ -123,7 +113,7 @@
                         height={innerHeight - yScale(d.value)}
                         fill={colorScale(d.label)}
                         opacity={selectedIndex === -1 || selectedIndex === index ? 1 : 0.45}
-                        on:click={() => selectedIndex = index}
+                        on:click={(e) => toggleBar(index, e)}
                         on:keyup={(e) => toggleBar(index, e)}
                         tabindex="0"
                         role="button"
@@ -163,6 +153,7 @@
                 {/if}
             </g>
         </svg>
+        <p aria-live="polite" class="sr-only">{liveText}</p>
         <ul class="legend">
                 {#each data as d}
                     <li style="--color: {colorScale(d.label)}">
@@ -171,7 +162,6 @@
                     </li>
                 {/each}
         </ul>
-        <p aria-live="polite" class="sr-only">{liveText}</p>
     </div>
 {:else}
     <table aria-label="Table showing project counts by year" class="data-table">
